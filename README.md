@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# covid\_seir
+# covid\_seir\_shiny
 
 <!-- badges: start -->
 
