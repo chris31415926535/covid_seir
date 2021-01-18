@@ -8,8 +8,13 @@
 <!-- badges: end -->
 
 This simple Shiny app is an interactive simulation of how physical
-distancing affects the spread of COVID-19 at the population level. It’s
-based on the epidemiological model developed by Anderson SC et
+distancing affects the spread of COVID-19 at the population level. It
+puts you in the role of choosing how much physical distancing the whole
+society will do: choose the level of interaction compared to “normal”
+(100 is business as usual, 0 is no one interacts with anyone), then
+press the button to see what happens over the next 30 days.
+
+It’s based on the epidemiological model developed by Anderson SC et
 al. (2020) and presented in [this
 paper](https://www.medrxiv.org/content/10.1101/2020.04.17.20070086v1.full.pdf),
 which is used by the Public Health Agency of Canada in its [official
@@ -61,13 +66,15 @@ general more people start distancing than stop.
 
 # Please note\!
 
-  - The simulation usesAnderson et al.’s (2020) initial conditions,
+  - Policy changes in physical distancing happen right away: we assume
+    society as a whole turns on a dime, responsive to your whim.
+  - The simulation uses Anderson et al.’s (2020) initial conditions,
     which represent British Columbia.
   - The simulation solves the differential equations numerically (using
     the **deSolve** package) using a resolution of 0.1 days, and then
     keeps results for whole-numbered time-steps for plotting.
   - **I’m not an epidemiologist** and am not affiliated with Anderson et
-    al. in any way.
+    al. in any way. I just like differential equations.
   - **This is for edutainment purposes only** to learn about how
     physical distancing can affect COVID-19 prevalence on the population
     level.
